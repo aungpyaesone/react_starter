@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStoreHook, Provider } from 'react-redux';
+import { ProviderProps } from 'react-redux';
+import ReduxApp from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// const store = createStoreHook((state=[],action)=>{
+//   if(action.type === "ADD") return [...state,action.items];
+//   return state;
+// });
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <App />
   </React.StrictMode>
 );
 
