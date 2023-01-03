@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createStoreHook, Provider } from 'react-redux';
 import { ProviderProps } from 'react-redux';
 import ReduxApp from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // const store = createStoreHook((state=[],action)=>{

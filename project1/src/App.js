@@ -2,13 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, createRef, useReducer } from 'react';
 import Component1 from './Component_1';
-
+import { BrowserRouter as Router, Link, Route,Routes } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import TopBar from './Topbar/Topbar';
+import TodoHome from './Todo/Components/Home';
+import MainPage from './Main/MainPage';
 
 function App(){
   return (
+    <Router>
     <div className='App'>
-        <Component1 />
-    </div>
+
+
+
+      <Routes>
+        <Route  exact path='/' element={<TodoHome/>}></Route>
+        <Route  exact path='/main' element={<MainPage/>}></Route>
+      </Routes>
+       </div>
+    </Router>
+    
+    
   );
 
 }
