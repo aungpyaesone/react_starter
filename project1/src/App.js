@@ -8,22 +8,28 @@ import About from './About';
 import TopBar from './Topbar/Topbar';
 import TodoHome from './Todo/Components/Home';
 import MainPage from './Main/MainPage';
+import IntervalCounter from './UseEffectIncorrectDependency/IntervalCounter';
+import IntervalHook from './UseEffectIncorrectDependency/IntervalHook';
+import DataFetch from './fetchdatafromAPI/DataFetch';
 
 function App(){
   return (
-    <Router>
-    <div className='App'>
+    // <Router>
+    // <div className='App'>
 
 
 
-      <Routes>
-        <Route  exact path='/' element={<TodoHome/>}></Route>
-        <Route  exact path='/main' element={<MainPage/>}></Route>
-      </Routes>
-       </div>
-    </Router>
-    
-    
+    //   <Routes>
+    //     <Route  exact path='/' element={<TodoHome/>}></Route>
+    //     <Route  exact path='/main' element={<MainPage/>}></Route>
+    //   </Routes>
+    //    </div>
+    // </Router>
+      //<IntervalCounter/>
+    //<IntervalHook/>
+     <div>
+    <DataFetch/>
+    </div>
   );
 
 }
