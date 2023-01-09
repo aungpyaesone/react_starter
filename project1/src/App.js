@@ -11,6 +11,12 @@ import MainPage from './Main/MainPage';
 import IntervalCounter from './UseEffectIncorrectDependency/IntervalCounter';
 import IntervalHook from './UseEffectIncorrectDependency/IntervalHook';
 import DataFetch from './fetchdatafromAPI/DataFetch';
+import ComponentF from './useContextHook/ComponentF';
+import CounterOne from './useReducerHook/CounterOne';
+import CounterTwo from './useReducerHook/CounterTwo';
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App(){
   return (
@@ -27,8 +33,17 @@ function App(){
     // </Router>
       //<IntervalCounter/>
     //<IntervalHook/>
-     <div>
-    <DataFetch/>
+    //<DataFetch/>
+    //  <div>
+    //   <UserContext.Provider value={'Aung Pyae Sone'}>
+    //     <ChannelContext.Provider value={'Mg Ice'}>
+    //     <ComponentF/>
+    //     </ChannelContext.Provider>
+    //   </UserContext.Provider>
+    // </div>
+
+    <div>
+      <CounterTwo/>
     </div>
   );
 
